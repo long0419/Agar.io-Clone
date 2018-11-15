@@ -9,6 +9,7 @@
     "clean": "rimraf src/main/webapp/dist",
     "build": "npm run clean && parallel-webpack --max-retries=3 --config config/webpack.build.js"
   },
+  "devtool": "source-map",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jaskaranbir/jaskaranbir.github.io.git"

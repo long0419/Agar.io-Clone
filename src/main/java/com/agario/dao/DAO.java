@@ -13,10 +13,15 @@ import java.sql.SQLException;
  */
 public class DAO {
 
-   private static final String MYSQL_HOST = System.getenv("MYSQL_HOST");
-   private static final String MYSQL_PORT = System.getenv("MYSQL_PORT");
-   private static final String MYSQL_USER = System.getenv("MYSQL_USER");
-   private static final String MYSQL_PASS = System.getenv("MYSQL_PASS");
+//   private static final String MYSQL_HOST = System.getenv("MYSQL_HOST");
+//   private static final String MYSQL_PORT = System.getenv("MYSQL_PORT");
+//   private static final String MYSQL_USER = System.getenv("MYSQL_USER");
+//   private static final String MYSQL_PASS = System.getenv("MYSQL_PASS");
+   
+   private static final String MYSQL_HOST = "172.29.231.80";
+   private static final String MYSQL_PORT = "3306";
+   private static final String MYSQL_USER = "root";
+   private static final String MYSQL_PASS = "newpwd";
 
     /**
      * Updates database with player score to form an all-time leaderboard.
