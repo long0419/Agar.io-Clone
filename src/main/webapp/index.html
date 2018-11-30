@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85323726-2"></script>
-        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-85323726-2');</script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Agario Clone</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/menu.css" />
+        <link rel="stylesheet" href="styles/game.css" />
     </head>
 
     <body>
@@ -15,22 +16,18 @@
         <div id='m-container' class='no-user-select'>
             <div id="m-alias-form">
                 <div>
-                    <span class="m-title">Agar.io-Clone</span><span class='m-sub-title'>Developed by
-                        <span class="m-sub-text">
-                            <a target="_blank" href="https://jaskaranbir.github.io">Jaskaran</a>
-                        </span>
-                    </span>
+                    <span class="m-title">Agar.io-Clone</span>
                 </div>
                 <hr />
-
-                <label for='m-alias-field' id='m-alias-field-label' class='m-form-element'>What's your Alias, mortal? </label>
+                
+                <label for='m-alias-field' id='m-alias-field-label' class='m-form-element'>What's Your Alias Mortal? </label>
                 <input type='text' id='m-alias-field' class='m-form-element' placeholder='Nick' autofocus /><br />
                 <button id='m-play-button' class='m-form-element m-form-button'>Play Game</button>
                 <button id='m-leaderboard-open-button' class='m-form-element m-form-button'>Leaderboard</button>
 
                 <hr />
-                <div class='m-instructions'>
-                    <span class='underline red-bold'>Controls</span>
+                <div id='m-instructions'>
+                    <span class='underline'>Controls</span>
                     <table id='m-instructions-table'>
                         <tr>
                             <th>Mouse:</th>
@@ -54,15 +51,6 @@
                         </tr>
                     </table>
                 </div>
-
-                <hr />
-                <div class='m-menu-footer'>
-                    <span class="m-sub-text">
-                        <a target="_blank" href="https://github.com/Jaskaranbir/Agar.io-Clone">
-                            https://github.com/Jaskaranbir/Agar.io-Clone
-                        </a>
-                    </span>
-                </div>
             </div>
 
             <div id="m-leaderboard">
@@ -77,10 +65,10 @@
 
             <div id="m-game-load-text">Loading Stage</div>
         </div>
-
-
+        
+        
         <!--Menu controls end. Game controls begin.-->
-
+        
 
         <div id="g-score-container" class='no-user-select'>XP: <span id="g-score">0</span></div>
 
@@ -89,8 +77,8 @@
             <div id='g-leaderboard-names'><div class='g-leaderboard-wait-text'>Waiting for score update...</div></div>
         </div>
 
-        <div id="g-perf-warning" class='no-user-select' style="opacity: 0">Your device is running too slow. This may impact game experience.</div>
-
+        <div id="g-perf-warning" class='no-user-select'>Your device is running too slow. This may impact game experience.</div>
+        
         <div id="g-chat-box" class='no-user-select'>
             <div id="g-chat-display"></div>
             <div id="g-chat-text">
@@ -105,5 +93,17 @@
 
         <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
         <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+        
+        <script type="text/javascript" src="scripts/stage.js"></script>
+        <script type="text/javascript" src="scripts/global.js"></script>
+        <script type="text/javascript" src="scripts/player.js"></script>
+        <script type="text/javascript" src="scripts/foods.js"></script>
+        <script type="text/javascript" src="scripts/enemies.js"></script>
+        <script type="text/javascript" src="scripts/leaderboard.js"></script>
+        <script type="text/javascript" src="scripts/chat.js"></script>
+        <script type="text/javascript" src="scripts/perf-monitor.js"></script>
+        <script type="text/javascript" src="scripts/gameloop.js"></script>
+        <script type="text/javascript" src="scripts/websocket.js"></script>
+        <script type="text/javascript" src="scripts/event-handlers.js"></script>
     </body>
 </html>
